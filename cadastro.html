@@ -1,0 +1,84 @@
+!<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Clube VW Golf</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚗 Apaixonados por Golf</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projeto.html">Modelos</a></li>
+                <li><a href="cadastro.html" class="active">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-page">
+        <div class="hero-content">
+            <h1>Cadastre seu Golf!</h1>
+            <p>Faça parte da maior comunidade de fãs do VW Golf. Preencha o formulário para ter acesso a conteúdos e eventos exclusivos.</p>
+        </div>
+    </section>
+
+    <main class="signup-section">
+        <div class="success-message" id="successMessage">
+            ✅ Cadastro realizado com sucesso! Em breve você receberá um e-mail de boas-vindas.
+        </div>
+        
+        <form id="volunteerForm">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone (WhatsApp):</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do Seu Golf</legend>
+                <div class="form-group">
+                    <label for="modelo">Modelo do Golf:</label>
+                    <select id="modelo" name="modelo" required>
+                        <option value="">-- Selecione a Geração --</option>
+                        <option value="mk1">Golf (1974 - 1983)</option>
+                        <option value="mk2">Golf (1983 - 1992)</option>
+                        <option value="mk3">Golf (1991 - 1999)</option>
+                        <option value="mk4">Golf (1997 - 2004)</option>
+                        <option value="mk45">Golf (2004 - 2014)</option>
+                        <option value="mk7">Golf (2012 - 2020)</option>
+                        <option value="mk8">Golf (2019 - Atual)</option>
+                        <option value="naotem">Ainda não tenho, sou fã!</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="habilidades">Comente sobre o seu Golf ou sua paixão:</label>
+                    <textarea id="habilidades" name="habilidades" rows="4" placeholder="Ex: Meu Golf é um GTI MK7 Stage 2! / Meu sonho é ter um MK3 Europeu."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-primary">Enviar Cadastro</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 VW-Golf/amigos. Todos os direitos reservados.</p>
+        <p>Feito com paixão pela lenda alemã.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
